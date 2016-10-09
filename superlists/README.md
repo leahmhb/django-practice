@@ -7,6 +7,14 @@
 * Selenium 3.0.03b
 * Django 1.10.0
 
+## Common Commands
+* python3 manage.py test
+** Runs unit tests
+* python3 manage.py runserver
+** Runs dev server
+* python3 functional_tests.py
+** Runs functional tests
+
 ### Problems & Solutions
 * Potential differences from book since I am using Django 1.10 and the book uses Django 1.8
 * Ran into issues using Selenium2 with Firefox 49.0
