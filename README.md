@@ -9,15 +9,15 @@
 
 ## Common Commands
 * python3 manage.py test
-** Runs unit tests
+    ** Runs unit tests
 * python3 manage.py runserver
-** Runs dev server
+    ** Runs dev server
 * python3 functional_tests.py
-** Runs functional tests
+    ** Runs functional tests
 
 ### Problems & Solutions
 * Potential differences from book since I am using Django 1.10 and the book uses Django 1.8
 * Ran into issues using Selenium2 with Firefox 49.0
-** Solution: Upgrade to Selenium3 and use geckdriver
+    ** Solution: Upgrade to Selenium3 and use geckdriver
 
 [1]: http://chimera.labs.oreilly.com/books/1234000000754/index.html
