@@ -23,8 +23,9 @@
 * I am using Django 1.10 and the book uses Django 1.8
 * I am using Selenium3 and the book uses Selenium2
     * `from selenium.webdriver.common import Keys` becomes from `selenium.webdriver.common.keys import Keys`
-
+    * [get_attribute][4] webelement.py @ line 133: `raw = pkgutil.get_data(__package__, 'getAttribute.js')` becomes `raw = pkgutil.get_data(__package__, 'getAttribute.js').decode('utf8')`
 
 [1]: http://chimera.labs.oreilly.com/books/1234000000754/index.html
 [2]: https://pypi.python.org/pypi/selenium
 [3]: https://docs.djangoproject.com/en/1.10/
+[4]: http://stackoverflow.com/questions/39527858/how-can-i-disable-web-driver-exceptions-when-using-the-mozilla-marionette-web-dr
