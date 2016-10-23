@@ -16,15 +16,17 @@
     * Runs functional tests
 
 ### Problems & Solutions
-* Ran into issues using Firefox 49.0
-    * Solution: geckodriver
+* Using different versions than book. Notes on how to fix the various errors.
 
-###Notes
-* I am using Django 1.10 and the book uses Django 1.8
-    * [CSRF token][5] changes on every reload -> breaks tests
-* I am using Selenium3 and the book uses Selenium2
-    * `from selenium.webdriver.common import Keys` becomes from `selenium.webdriver.common.keys import Keys`
-    * [get_attribute][4] webelement.py @ line 133: `raw = pkgutil.get_data(__package__, 'getAttribute.js')` becomes `raw = pkgutil.get_data(__package__, 'getAttribute.js').decode('utf8')`
+#### Firefox 49.0
+* Solution: geckodriver
+
+#### Django 1.10
+* [CSRF token][5] changes on every reload -> breaks tests
+
+#### Selenium3
+* `from selenium.webdriver.common import Keys` becomes from `selenium.webdriver.common.keys import Keys`
+* [get_attribute][4] webelement.py @ line 133: `raw = pkgutil.get_data(__package__, 'getAttribute.js')` becomes `raw = pkgutil.get_data(__package__, 'getAttribute.js').decode('utf8')`
 
 [1]: http://chimera.labs.oreilly.com/books/1234000000754/index.html
 [2]: https://pypi.python.org/pypi/selenium
