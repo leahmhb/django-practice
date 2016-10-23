@@ -21,6 +21,7 @@
 
 ###Notes
 * I am using Django 1.10 and the book uses Django 1.8
+    * [CSRF token][5] changes on every reload -> breaks tests
 * I am using Selenium3 and the book uses Selenium2
     * `from selenium.webdriver.common import Keys` becomes from `selenium.webdriver.common.keys import Keys`
     * [get_attribute][4] webelement.py @ line 133: `raw = pkgutil.get_data(__package__, 'getAttribute.js')` becomes `raw = pkgutil.get_data(__package__, 'getAttribute.js').decode('utf8')`
@@ -29,3 +30,4 @@
 [2]: https://pypi.python.org/pypi/selenium
 [3]: https://docs.djangoproject.com/en/1.10/
 [4]: http://stackoverflow.com/questions/39527858/how-can-i-disable-web-driver-exceptions-when-using-the-mozilla-marionette-web-dr
+[5]: https://gist.github.com/horvatha/2e11b48f431c53b101db6cb817b2fc7f
